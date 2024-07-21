@@ -10,7 +10,7 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
 int main()
 {
-    // Initialize GLFW
+
     if (!glfwInit())
     {
         std::cerr << "Failed to initialize GLFW" << std::endl;
@@ -46,8 +46,8 @@ int main()
 
     // Create shader program
     Shader shader;
-    shader.setVertexShader("shaders/vertex.glsl");
-    shader.setFragmentShader("shaders/fragment.glsl");
+    shader.setVertexShader("src/shaders/vertex.glsl");
+    shader.setFragmentShader("src/shaders/fragment.glsl");
     shader.compile();
 
     // Vertex data for a triangle
@@ -107,4 +107,3 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
 }
-//fdisdfk

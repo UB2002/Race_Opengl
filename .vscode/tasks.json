@@ -45,7 +45,7 @@
                     "-I${workspaceRoot}/dependencies/GLFW/include",
                     "-I${workspaceRoot}/dependencies/GLAD/include",
                     "-I${workspaceRoot}/dependencies/GLM",
-                    "-I${workspaceRoot}/src",
+                    "-I${workspaceRoot}/src/headers",
                     "-lopengl32",
                     "-L${workspaceRoot}/dependencies/GLFW/lib-mingw",
                     "-static",
